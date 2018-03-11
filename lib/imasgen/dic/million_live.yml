@@ -1,0 +1,211 @@
+:million_live:
+  # AS member
+  - :last_name: 天海
+    :first_name: 春香
+    :last_name_furigana: あまみ
+    :first_name_furigana: はるか
+  - :last_name: 如月
+    :first_name: 千早
+    :last_name_furigana: きさらぎ
+    :first_name_furigana: ちはや
+  - :last_name: 萩原
+    :first_name: 雪歩
+    :last_name_furigana: はぎわら
+    :first_name_furigana: ゆきほ
+  - :last_name: 高槻
+    :first_name: やよい
+    :last_name_furigana: たかつき
+    :first_name_furigana: やよい
+  - :last_name: 秋月
+    :first_name: 律子
+    :last_name_furigana: あきづき
+    :first_name_furigana: りつこ
+  - :last_name: 水瀬
+    :first_name: 伊織
+    :last_name_furigana: みなせ
+    :first_name_furigana: いおり
+  - :last_name: 三浦
+    :first_name: あずさ
+    :last_name_furigana: みうら
+    :first_name_furigana: あずさ
+  - :last_name: 双海
+    :first_name: 亜美
+    :last_name_furigana: ふたみ
+    :first_name_furigana: あみ
+  - :last_name: 双海
+    :first_name: 真美
+    :last_name_furigana: ふたみ
+    :first_name_furigana: まみ
+  - :last_name: 菊地
+    :first_name: 真
+    :last_name_furigana: きくち
+    :first_name_furigana: まこと
+  - :last_name: 星井
+    :first_name: 美希
+    :last_name_furigana: ほしい
+    :first_name_furigana: みき
+  - :last_name: 四条
+    :first_name: 貴音
+    :last_name_furigana: しじょう
+    :first_name_furigana: たかね
+  - :last_name: 我那覇
+    :first_name: 響
+    :last_name_furigana: がなは
+    :first_name_furigana: ひびき
+  # Theater member
+  - :last_name: 春日
+    :first_name: 未来
+    :last_name_furigana: かすが
+    :first_name_furigana: みらい
+  - :last_name: 木下
+    :first_name: ひなた
+    :last_name_furigana: きのした
+    :first_name_furigana: ひなた
+  - :last_name: ''
+    :first_name: ジュリア
+    :last_name_furigana: ''
+    :first_name_furigana: じゅりあ
+  - :last_name: 高山
+    :first_name: 紗代子
+    :last_name_furigana: たかやま
+    :first_name_furigana: さよこ
+  - :last_name: 田中
+    :first_name: 琴葉
+    :last_name_furigana: たなか
+    :first_name_furigana: ことは
+  - :last_name: 天空橋
+    :first_name: 朋花
+    :last_name_furigana: てんくうばし
+    :first_name_furigana: ともか
+  - :last_name: 箱崎
+    :first_name: 星梨花
+    :last_name_furigana: はこざき
+    :first_name_furigana: せりか
+  - :last_name: 松田
+    :first_name: 亜利沙
+    :last_name_furigana: まつだ
+    :first_name_furigana: ありさ
+  - :last_name: 最上
+    :first_name: 静香
+    :last_name_furigana: もがみ
+    :first_name_furigana: しずか
+  - :last_name: 望月
+    :first_name: 杏奈
+    :last_name_furigana: もちづき
+    :first_name_furigana: あんな
+  - :last_name: 矢吹
+    :first_name: 可奈
+    :last_name_furigana: やぶき
+    :first_name_furigana: かな
+  - :last_name: エミリー
+    :first_name: スチュアート
+    :last_name_furigana: えみりー
+    :first_name_furigana: すちゅあーと
+  - :last_name: 大神
+    :first_name: 環
+    :last_name_furigana: おおがみ
+    :first_name_furigana: たまき
+  - :last_name: 北上
+    :first_name: 麗花
+    :last_name_furigana: きたかみ
+    :first_name_furigana: れいか
+  - :last_name: 高坂
+    :first_name: 海美
+    :last_name_furigana: こうさか
+    :first_name_furigana: うみ
+  - :last_name: 佐竹
+    :first_name: 美奈子
+    :last_name_furigana: さたけ
+    :first_name_furigana: みなこ
+  - :last_name: 島原
+    :first_name: エレナ
+    :last_name_furigana: しまばら
+    :first_name_furigana: えれな
+  - :last_name: 永吉
+    :first_name: 昴
+    :last_name_furigana: ながよし
+    :first_name_furigana: すばる
+  - :last_name: 野々原
+    :first_name: 茜
+    :last_name_furigana: ののはら
+    :first_name_furigana: あかね
+  - :last_name: 馬場
+    :first_name: このみ
+    :last_name_furigana: ばば
+    :first_name_furigana: このみ
+  - :last_name: 福田
+    :first_name: のり子
+    :last_name_furigana: ふくだ
+    :first_name_furigana: のりこ
+  - :last_name: 舞浜
+    :first_name: 歩
+    :last_name_furigana: まいはま
+    :first_name_furigana: あゆむ
+  - :last_name: 真壁
+    :first_name: 瑞希
+    :last_name_furigana: まかべ
+    :first_name_furigana: みずき
+  - :last_name: 百瀬
+    :first_name: 莉緒
+    :last_name_furigana: ももせ
+    :first_name_furigana: りお
+  - :last_name: 横山
+    :first_name: 奈緒
+    :last_name_furigana: よこやま
+    :first_name_furigana: なお
+  - :last_name: 伊吹
+    :first_name: 翼
+    :last_name_furigana: いぶき
+    :first_name_furigana: つばさ
+  - :last_name: 北沢
+    :first_name: 志保
+    :last_name_furigana: きたざわ
+    :first_name_furigana: しほ
+  - :last_name: 篠宮
+    :first_name: 可憐
+    :last_name_furigana: しのみや
+    :first_name_furigana: かれん
+  - :last_name: 周防
+    :first_name: 桃子
+    :last_name_furigana: すおう
+    :first_name_furigana: ももこ
+  - :last_name: 徳川
+    :first_name: まつり
+    :last_name_furigana: とくがわ
+    :first_name_furigana: まつり
+  - :last_name: 所
+    :first_name: 恵美
+    :last_name_furigana: ところ
+    :first_name_furigana: めぐみ
+  - :last_name: 豊川
+    :first_name: 風花
+    :last_name_furigana: とよかわ
+    :first_name_furigana: ふうか
+  - :last_name: 中谷
+    :first_name: 育
+    :last_name_furigana: なかたに
+    :first_name_furigana: いく
+  - :last_name: 七尾
+    :first_name: 百合子
+    :last_name_furigana: ななお
+    :first_name_furigana: ゆりこ
+  - :last_name: 二階堂
+    :first_name: 千鶴
+    :last_name_furigana: にかいどう
+    :first_name_furigana: ちづる
+  - :last_name: 宮尾
+    :first_name: 美也
+    :last_name_furigana: みやお
+    :first_name_furigana: みや
+  - :last_name: 伴田
+    :first_name: 路子
+    :last_name_furigana: はんだ
+    :first_name_furigana: ろこ
+  - :last_name: 桜守
+    :first_name: 歌織
+    :last_name_furigana: さくらもり
+    :first_name_furigana: かおり
+  - :last_name: 白石
+    :first_name: 紬
+    :last_name_furigana: しらいし
+    :first_name_furigana: つむぎ
