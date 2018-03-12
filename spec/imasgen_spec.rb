@@ -7,20 +7,52 @@ RSpec.describe Imasgen do
   end
 
   it 'can get one Million Live! member' do
+    # test instance
     imas_ml = Imasgen::MillionLiveCls.new
     expect(imas_ml).not_to be nil
+    # get one character
     rand = imas_ml.name
-    expect(rand.first.kanji).not_to be nil
-    expect(rand.last.kanji).not_to be nil
-    @logger.debug(rand)
-    expect(Imasgen.millionlive.name.kanji).not_to be nil
-    @logger.debug(Imasgen.millionlive.name.kanji)
-    @logger.debug(Imasgen.millionlive.name.hiragana)
+    expect(rand.first.kanji).not_to be_empty
+    expect(rand.first.hiragana).not_to be_empty
+    expect(rand.first.katakana).not_to be_empty
+    expect(rand.first.romaji).not_to be_empty
+    expect(rand.last.kanji).not_to be_empty
+    expect(rand.last.hiragana).not_to be_empty
+    expect(rand.last.katakana).not_to be_empty
+    expect(rand.last.romaji).not_to be_empty
+    expect(rand.kanji).not_to be_empty
+    expect(rand.hiragana).not_to be_empty
+    expect(rand.katakana).not_to be_empty
+    expect(rand.romaji).not_to be_empty
+    # debug text
+    @logger.debug(rand.kanji)
+    @logger.debug(rand.hiragana)
+    @logger.debug(rand.katakana)
+    @logger.debug(rand.romaji)
   end
 
   it 'Hotchpotch festival!!' do
-    expect(Imasgen.millionlive.hotchpotch.kanji).not_to be nil
-    @logger.debug(Imasgen.millionlive.hotchpotch.kanji)
+    # test instance
+    imas_ml = Imasgen::MillionLiveCls.new
+    # hotchpotch!!
+    rand = imas_ml.hotchpotch
+    expect(rand.first.kanji).not_to be_empty
+    expect(rand.first.hiragana).not_to be_empty
+    expect(rand.first.katakana).not_to be_empty
+    expect(rand.first.romaji).not_to be_empty
+    expect(rand.last.kanji).not_to be_empty
+    expect(rand.last.hiragana).not_to be_empty
+    expect(rand.last.katakana).not_to be_empty
+    expect(rand.last.romaji).not_to be_empty
+    expect(rand.kanji).not_to be_empty
+    expect(rand.hiragana).not_to be_empty
+    expect(rand.katakana).not_to be_empty
+    expect(rand.romaji).not_to be_empty
+    # debug text
+    @logger.debug(rand.kanji)
+    @logger.debug(rand.hiragana)
+    @logger.debug(rand.katakana)
+    @logger.debug(rand.romaji)
   end
 
   it 'test exception' do

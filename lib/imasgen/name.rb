@@ -1,3 +1,6 @@
+require 'moji'
+require 'romaji'
+
 module Imasgen
   class Name
     attr_reader :first, :last
@@ -16,6 +19,14 @@ module Imasgen
       "#{@last.hiragana} #{@first.hiragana}"
     end
 
+    def katakana
+      "#{@last.katakana} #{@first.katakana}"
+    end
+
+    def romaji
+      "#{@first.romaji} #{@last.romaji}"
+    end
+
     class First
       def initialize(namedata)
         @namedata = namedata
@@ -27,6 +38,14 @@ module Imasgen
 
       def kanji
         @namedata[:first_name]
+      end
+
+      def katakana
+        Moji.hira_to_kata(@namedata[:first_name_furigana])
+      end
+
+      def romaji
+        Romaji.kana2romaji(@namedata[:first_name_furigana]).capitalize
       end
     end
 
@@ -41,6 +60,14 @@ module Imasgen
 
       def kanji
         @namedata[:last_name]
+      end
+
+      def katakana
+        Moji.hira_to_kata(@namedata[:last_name_furigana])
+      end
+
+      def romaji
+        Romaji.kana2romaji(@namedata[:last_name_furigana]).capitalize
       end
     end
   end
