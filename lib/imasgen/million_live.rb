@@ -10,9 +10,8 @@ module Imasgen
     end
   end
 
-  @imas_ml = MillionLiveCls.new
-
   def self.millionlive
+    @imas_ml ||= MillionLiveCls.new
     @imas_ml
   end
 end

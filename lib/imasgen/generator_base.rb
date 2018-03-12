@@ -21,7 +21,7 @@ module Imasgen
     end
 
     def be_strict=(val)
-      @be_stricte = val
+      @be_strict = val
       reset
     end
 
