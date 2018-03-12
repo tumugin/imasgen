@@ -6,7 +6,7 @@ require "imasgen/version"
 Gem::Specification.new do |spec|
   spec.name          = "imasgen"
   spec.version       = Imasgen::VERSION
-  spec.authors       = ["Kazuki Oishi"]
+  spec.authors       = ["tumugin"]
   spec.email         = ["tumugin@users.noreply.github.com"]
 
   spec.summary       = "Random name generator using character's name from Idolmaster series."
