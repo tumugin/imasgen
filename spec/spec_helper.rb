@@ -10,6 +10,8 @@ end
 require 'bundler/setup'
 require 'imasgen'
 require 'logger'
+# needs to load first
+require 'imasgen_shared'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -22,7 +24,7 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 
-  config.before(:example) {
-    @logger = Logger.new(STDOUT)
-  }
+  config.before do
+    @logger ||= Logger.new(STDOUT)
+  end
 end
