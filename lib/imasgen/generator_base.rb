@@ -30,7 +30,7 @@ module Imasgen
       item = lambda {
         @basedic ||= @be_strict ? @namedic.select {|i| i[:last_name] != '' && i[:first_name] != ''} : @namedic
         retval = @basedic.reject {|i| i[:used]}.sample
-        throw StandardError.new('Already used all name pairs.') if retval.nil? && !@auto_reset
+        raise StandardError.new('Already used all name pairs.') if retval.nil? && !@auto_reset
         if retval.nil? && @auto_reset
           # delete used flag
           @basedic.each {|i| i.delete(:used)}
@@ -58,11 +58,15 @@ module Imasgen
           @comb.each {|i| i.delete(:used)}
           ret
         else
-          throw StandardError.new('Already used all name pairs.')
+          raise StandardError.new('Already used all name pairs.')
         end
       }.call
       item[:used] = true
       Imasgen::Name.new(item)
+    end
+
+    def self.getyaml
+      throw NotImplementedError
     end
   end
 end

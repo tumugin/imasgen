@@ -1,10 +1,10 @@
 require 'rspec'
 
 RSpec.shared_context :imasgen_shared do
-  RSpec.shared_examples :imasgen_shared_ex do |matsuri|
+  RSpec.shared_examples :imasgen_shared_ex do |matsuri, args|
     it 'can get one member' do
       # test instance
-      tinst = matsuri.new
+      tinst = args ? matsuri.new(*args) : matsuri.new
       expect(tinst).not_to be nil
       # get one character
       rand = tinst.name
@@ -29,7 +29,7 @@ RSpec.shared_context :imasgen_shared do
 
     it 'Hotchpotch festival!!' do
       # test instance
-      tinst = matsuri.new
+      tinst = args ? matsuri.new(*args) : matsuri.new
       # hotchpotch!!
       rand = tinst.hotchpotch
       expect(rand.first.kanji).not_to be_empty
@@ -52,17 +52,20 @@ RSpec.shared_context :imasgen_shared do
     end
 
     it 'use up all name pairs.' do
-      tinst = matsuri.new
+      tinst = args ? matsuri.new(*args) : matsuri.new
       expect do
         loop {tinst.name}
-      end.to raise_error(UncaughtThrowError, /Already used all name pairs/)
+      end.to raise_error(StandardError, /Already used all name pairs/)
     end
 
     it 'use up all name pairs.(hotchpotch)' do
-      tinst = matsuri.new
+      tinst = args ? matsuri.new(*args) : matsuri.new
+      # takes too long time so use this cheat
+      tinst.hotchpotch
+      tinst.instance_variable_get('@comb').each {|i| i[:used] = true}
       expect {
         loop {tinst.hotchpotch}
-      }.to raise_error(UncaughtThrowError, /Already used all name pairs/)
+      }.to raise_error(StandardError, /Already used all name pairs/)
     end
   end
 end

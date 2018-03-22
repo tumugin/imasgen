@@ -8,6 +8,10 @@ module Imasgen
       yaml = YAML.load_file(__dir__ + '/dic/cinderella_girls.yml')
       @namedic = yaml[:cinderella_girls]
     end
+
+    def self.getyaml
+      YAML.load_file(__dir__ + '/dic/cinderella_girls.yml')[:cinderella_girls]
+    end
   end
 
   def self.cinderella

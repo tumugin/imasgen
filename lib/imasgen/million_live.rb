@@ -8,6 +8,10 @@ module Imasgen
       yaml = YAML.load_file(__dir__ + '/dic/million_live.yml')
       @namedic = yaml[:million_live]
     end
+
+    def self.getyaml
+      YAML.load_file(__dir__ + '/dic/million_live.yml')[:million_live]
+    end
   end
 
   def self.millionlive
