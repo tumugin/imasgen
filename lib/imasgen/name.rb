@@ -11,6 +11,14 @@ module Imasgen
       @last = Last.new(namedata)
     end
 
+    def to_s
+      kanji
+    end
+
+    def to_str
+      kanji
+    end
+
     def kanji
       "#{@last.kanji} #{@first.kanji}"
     end

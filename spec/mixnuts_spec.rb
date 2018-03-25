@@ -8,7 +8,7 @@ RSpec.describe 'MIXNUTS' do
 
   it 'Raise the FLAG' do
     expect do
-      Imasgen.mixnuts(:aqours,:lovelive_sunshine)
+      Imasgen.mixnuts(:aqours, :lovelive_sunshine)
     end.to raise_error(ArgumentError)
   end
 end
