@@ -24,10 +24,22 @@ module Imasgen
             raise ArgumentError.new("Invalid Argument #{item}")
         end
       end
+      if nuts.none?
+        @namedic += Imasgen::SideMCls.getyaml
+        @namedic += Imasgen::MillionLiveCls.getyaml
+        @namedic += Imasgen::CinderellaGirlsCls.getyaml
+      end
+      @args = nuts
+    end
+
+    def unique
+      @unique_i ||= self.class.new(*@args)
     end
   end
 
   def self.mixnuts(*args)
-    MIXNUTSCls.new(*args)
+    nuts = MIXNUTSCls.new(*args)
+    nuts.auto_reset = true
+    nuts
   end
 end

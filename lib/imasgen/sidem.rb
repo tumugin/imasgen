@@ -16,6 +16,7 @@ module Imasgen
 
   def self.sidem
     @sidem ||= SideMCls.new
+    @sidem.auto_reset = true
     @sidem
   end
 end

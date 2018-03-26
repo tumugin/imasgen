@@ -16,6 +16,7 @@ module Imasgen
 
   def self.cinderella
     @imas_cg ||= Imasgen::CinderellaGirlsCls.new
+    @imas_cg.auto_reset = true
     @imas_cg
   end
 end

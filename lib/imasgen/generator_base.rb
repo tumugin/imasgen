@@ -12,6 +12,10 @@ module Imasgen
       @be_strict = true
     end
 
+    def unique
+      @unique_i ||= self.class.new
+    end
+
     def reset
       # reset dictonary cache
       @basedic = nil

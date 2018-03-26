@@ -16,6 +16,7 @@ module Imasgen
 
   def self.millionlive
     @imas_ml ||= MillionLiveCls.new
+    @imas_ml.auto_reset = true
     @imas_ml
   end
 end
