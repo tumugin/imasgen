@@ -1,9 +1,9 @@
 # Imasgen
 
-imasgenはアイドルマスターシリーズのキャラクターの名前をランダムに返すライブラリです。gimeiやfakerのように使えます。
+imasgenはアイドルマスターシリーズのアイドルの名前をランダムに返すライブラリです。gimeiやfakerのように使えます。
 ミリオンライブ！、SideM、シンデレラガールズのキャラクター名を収録しています。
 
-## Usage
+## 使い方
 
 ### ランダムに名前を取得する
 ```ruby
@@ -15,8 +15,12 @@ name.katakana #=> "モモセ リオ"
 name.romaji #=> "Rio Momose"
 name.last.kanji #=> "百瀬"
 name.last.hiragana #=> "ももせ"
+name.last.katakana #=> "モモセ"
+name.last.romaji #=> "Momose"
 name.first.kanji #=> "莉緒"
 name.first.hiragana #=> "りお"
+name.first.katakana #=> "リオ"
+name.first.romaji #=> "Rio"
 ```
 SideM、シンデレラガールズのキャラクター名を取得するには...
 ```ruby
@@ -50,6 +54,9 @@ name.kanji #=> "最上 静香"
 hotchpotch = mixnuts.hotchpotch
 hotchpotch.kanji #=> "持田 梨沙"
 ```
+
+### デフォルト設定について
+* ジュリアやピエールなど苗字が分からないキャラクターは初期設定では出現しないようになっています。この挙動を変更するには `Imasgen.millionlive.be_strict = false` のようにbe_strictプロパティを変更します。
 
 ## Installation
 
